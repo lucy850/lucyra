@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vinyl.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="kaset">
+            <img src="vinyl baru.png" alt="vinyl">
+        </div>
+        <div class="bungkus">
+        <img src="vinyl_2-removebg-preview.png" alt="vinyl">
+        </div>
+    </div>
+        
+        <div class="konten">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="malik1.jpg" alt="Image 1" class="carousel-item" id="gambar1">
+                    <img src="malik2.jpg" alt="Image 2" class="carousel-item" id="gambar2">
+                    <img src="malik3.jpg" alt="Image 3" class="carousel-item" id="gambar3">
+                    <img src="malik4.jpg" alt="Image 4" class="carousel-item" id="gambar4">
+                    <img src="malik5.jpg" alt="Image 5" class="carousel-item" id="gambar 5">
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                    <span class="indicator" data-index="3"></span>
+                    <span class="indicator" data-index="4"></span>
+                </div>
+            </div>
+            <div class="audio">
+                <audio controls id="audio" autoplay>
+                    <source src="thecdi.ca - I Love You 3000 - Stephanie Poetri [LyricsVietsub].mp3" type="audio/mp3"> <!-- Ganti dengan link lagu -->
+                    Browser kamu tidak mendukung elemen audio.
+                </audio>
+            </div>
+            <div class="lirik" id="lirik">
+                <!-- Lirik akan muncul di sini -->
+            </div>
+            
+            <button class="btn-selanjutnya" id="sebelum">Back</button>
+        </div>
+        
+
+    <script src="vinyl.js"></script>
+    <script src="geser.js"></script>
+</body>
+</html>

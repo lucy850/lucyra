@@ -1,0 +1,181 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+
+}
+
+body {
+    font-family: 'poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url('purple\ love.jpg'); /* Ganti dengan link atau path gambar */
+    background-size: cover;  /* Biar gambar full 1 layar */
+    background-position: center; /* Posisikan di tengah */
+    background-repeat: no-repeat; /* Jangan ulangi gambarnya */
+    height: 100vh; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 7%;
+    background-color: #823d9ec2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+
+}
+
+.navbar .navbar-logo {
+color: #fff;
+text-decoration: none;
+font-size: 2rem;
+font-weight: 700;
+}
+
+.navbar .navbar-nav a{
+color: #fff;
+text-decoration: none;
+font-size: 1.4rem;
+margin: 1rem;
+font-weight: 500;
+display: inline-block;
+font-family: 'poppins';
+}
+
+.navbar .navbar-nav a:hover {
+color: #a742a7;
+}
+
+.navbar .navbar-nav a::after {
+content: '';
+display: block;
+padding-bottom: 0.5rem;
+border-bottom: 1px solid #c023be;
+transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after{
+transform: scaleX(0.5);
+}
+
+
+.navbar .navbar-extra a{
+color: #f3e9cf;
+margin: 0.5rem;
+font-size: 1.8rem 7%;
+}
+
+#menu {
+display: none;
+}
+
+
+
+.container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    border: 5px solid #fbfbfb;
+    padding: 40px 7%;
+    border-radius: 20px;
+}
+
+.text-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ffffff;
+    padding: 20px;
+    border-radius: 30px;
+    color: #ffffff;
+}
+
+.searchBtn {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.searchBtn:hover {
+    color: #5e275e;
+    transform: scale(1.1);
+}
+
+@media (max-width:  860px) {
+    
+    #menu {
+        display: block;
+    }
+    .navbar .navbar-nav {
+        position: absolute;
+        right: -100%;
+        top: 100%;
+        background-color: #823d9ec2;
+        width: 14rem;
+        height: 20vh;
+        border-radius: 10px;
+        transition: 0.1s;
+    }
+
+    .navbar .navbar-nav.active a{
+        color: #f3e9cf;
+        display: block;
+        padding: 1rem;
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav.active a:hover{
+        color: #db1a51;
+    }
+
+    .navbar .navbar-nav.active a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav.active a:hover::after{
+        transform: scaleX(0.2);
+    }
+
+    .container {
+        width: 95%;
+        height: 200px;
+    }
+
+    .container img {
+        width: 190px;
+        height: 150px;
+    }
+
+    .text-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid #ffffff;
+        padding: 10px;
+        border-radius: 30px;
+        color: #ffffff;
+    }
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="navbar-logo">Malikal</a>
+          <div class="navbar-nav">
+              <a href="bucin.html" id="home">Home</a>
+              <a href="about.html" id="About">About</a>
+              <a href="our-journey.html" id="photo">Photo</a>
+          </div>
+          <div class="navbar-extra"> 
+              <a href="#" id="menu"><i data-feather="menu"></i></a>
+          </div>
+      </div>
+
+      <canvas id="myCanvas" width="400" height="200"></canvas>
+      
+          <div class="buttons">
+            <button id="yesBtn">Yes</button>
+            <button id="noBtn">No</button>
+          </div>
+
+          <div class="popup" id="lovePopup">
+            <h2>❤️ I Love You Too! ❤️</h2>
+            <p>You make my heart flutter! 💕</p>
+            <button id="nextBtn" class="nextBtn">Next</button>
+    
+        </div>
+    
+        <div id="photoCarousel" class="carousel" style="display: none;">
+            <img src="malik1.jpg" alt="photo1">
+            <img src="malik2.jpg" alt="photo2">
+            <img src="malik3.jpg" alt="photo3">
+            <img src="malik4.jpg" alt="photo4">
+            <img src="malik5.jpg" alt="photo5">
+        </div>
+
+      <script src="active..js"></script>
+      <script>
+        feather.replace();
+      </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+
+}
+body {
+    font-family: 'poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+    background-image: url('purple\ love.jpg'); /* Ganti dengan link atau path gambar */
+    background-size: cover;  /* Biar gambar full 1 layar */
+    background-position: center; /* Posisikan di tengah */
+    background-repeat: no-repeat; /* Jangan ulangi gambarnya */
+    height: 100vh; 
+
+}
+
+.container {
+    position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+  
+}
+
+.bungkus {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
+    
+    
+}
+
+.bungkus img {
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0n, 0, 0.5);
+
+}
+
+
+
+.kaset {
+    margin-left: 240px;
+    cursor: pointer;
+}
+.kaset img {
+    width: 300px;
+    height: 300px;
+}
+.kaset:hover {
+    margin-left: 350px;
+    
+
+}

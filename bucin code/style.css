@@ -1,0 +1,111 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+
+}
+
+body {
+    font-family: 'poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url('purple\ love.jpg'); /* Ganti dengan link atau path gambar */
+    background-size: cover;  /* Biar gambar full 1 layar */
+    background-position: center; /* Posisikan di tengah */
+    background-repeat: no-repeat; /* Jangan ulangi gambarnya */
+    height: 100vh;
+}
+
+
+
+.container {
+    margin-top: 70px;
+    display: flex;
+    border: 5px solid #e757e7c2;
+    border-radius: 10px;
+    padding: 30px;
+    height: 550px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+
+img {
+    margin-top: 70px;
+    width: 400px;
+    border-radius: 20px;
+
+}
+
+h2 {
+    font-family: 'poppins';
+    color: #ffffffc2;
+}
+input {
+    margin-top: 10px;
+    width: 250px;
+    padding: 8px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(242, 241, 241, 0.2);
+    box-shadow: 3px 7px 7px rgba(0, 0, 0, 0.3);
+}
+.keypad-wrap {
+    margin-left: 100px;
+}
+
+.keypad {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    height: 60px;
+    gap: 30px;
+
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    color: rgb(242, 241, 241);
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #e757e7c2;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+button:hover {
+    background-color: #981798c2;
+}
+
+h2 {
+    font-family: 'poppins';
+}
+
+@media (max-width:  780px) {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1000px;
+        width: 500px;
+    }
+
+    .keypad-wrap {
+        margin-bottom: 300px;
+        width: 50%;
+    }
+
+  
+
+    img {
+        
+    }
+}
+
