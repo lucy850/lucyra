@@ -1,0 +1,125 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+
+}
+
+body {
+    font-family: 'poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url('purple\ love.jpg'); /* Ganti dengan link atau path gambar */
+    background-size: cover;  /* Biar gambar full 1 layar */
+    background-position: center; /* Posisikan di tengah */
+    background-repeat: no-repeat; /* Jangan ulangi gambarnya */
+    height: 100vh; 
+}
+
+.container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container  {
+    display: flex;
+    flex-direction: column; /* Susun elemen secara vertikal */
+    align-items: center; /* Posisikan tengah */
+    text-align: center;
+    gap: 20px;
+    padding: 18px;
+    border: 5px solid #fff;
+    height: 250px;
+    width: 900px;
+    border-radius: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Jarak antara gambar dan teks */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.btn {
+    margin-top: 30px;
+    align-items: center;
+}
+
+#nextBtn {
+    color: #fff;
+    background-color: #a657c6;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    gap: 60px;
+
+    
+}
+
+#ourJourney {
+    color: #fff;
+    background-color: #a657c6;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    gap: 60px;
+
+    
+}
+
+.ourJourney {
+    width: 120px;
+    height: 40px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+
+}
+
+.back {
+    width: 90px;
+    height: 40px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+    margin-right: 20px;
+}
+
+#nextBtn:hover {
+    background-color: #552867;
+}
+
+#ourJourney:hover {
+    background-color: #552867;
+}
+
+
+
+
+
+
+
+
+
+button:hover {
+    background-color: #552867e9;
+    color: #552867e9;
+}
+
+.text-container {
+    color: #fff;
+    font-size: 1.2rem;
+}
+

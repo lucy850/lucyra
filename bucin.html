@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="pass-code">
+            <img src="malik.jpeg" alt="gambar" class="gambar">
+            
+        </div>
+        
+        <div class="keypad-wrap">
+            <h2 class="info">Tanggal jadian kita</h2>
+            <input type="password" id="passcode" readonly>
+    <div class="keypad">
+            <button onclick="tambahAngka(1)">1</button>
+            <button onclick="tambahAngka(2)">2</button>
+            <button onclick="tambahAngka(3)">3</button>
+            <button onclick="tambahAngka(4)">4</button>
+            <button onclick="tambahAngka(5)">5</button>
+            <button onclick="tambahAngka(6)">6</button>
+            <button onclick="tambahAngka(7)">7</button>
+            <button onclick="tambahAngka(8)">8</button>
+            <button onclick="tambahAngka(9)">9</button>
+            <button onclick="hapus()">⌫</button>
+            <button onclick="tambahAngka(0)">0</button>
+            <button onclick="cekPasscode()">✔</button>
+    </div>
+    </div>
+    </div>
+ 
+
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
